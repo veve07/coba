@@ -671,4 +671,24 @@ footer .credit a {
   html {
     font-size: 55%;
   }
+  .products .row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .products .product-card {
+    padding: 1rem;
+  }
+
+  .products .product-image img {
+    height: 15rem;
+  }
+
+  .products .product-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .products .product-price {
+    font-size: 1.1rem;
+  }
 }
