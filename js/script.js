@@ -64,7 +64,7 @@ const products = [
   {
     id: 'labu-jipang-muria',
     name: 'Labu Jipang Muria',
-    img: 'img/labu-jipang-Muria.png',
+    img: 'img/labu-jipang-muria.png',
     basePrice: 70000,
     description: 'packing plastik isi 6pcs<br>1 karton isi 36pcs<br>Cemilan sehat khas Muria yang terbuat dari sayur labu siem muria dan gula jagung.',
     variants: [
