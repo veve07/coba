@@ -512,60 +512,130 @@ footer .credit a {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .modal-container {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 15% auto;
-  padding: 1.2rem;
+  margin: 5% auto;
+  padding: 2rem;
   border: 1px solid #666;
-  width: 80%;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
   animation: animateModal 0.5s;
+  border-radius: 8px;
 }
+
 .modal-content {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.modal-content img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .product-info-wrapper {
   flex: 1;
+  min-width: 300px;
+}
+
+.product-info-wrapper h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
 }
 
 .content-flex-container {
   display: flex;
   gap: 2rem;
   margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .product-description {
-  flex: 1; /* Bagian kiri: Deskripsi */
-  border-right: 1px solid #eee;
+  flex: 1;
+  min-width: 250px;
   padding-right: 1.5rem;
+  border-right: 1px solid #ddd;
+}
+
+.product-description p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
 }
 
 .product-controls {
-  flex: 1; /* Bagian kanan: Pilih Varian & Tombol */
+  flex: 1;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.variant-selection label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--bg);
 }
 
 .product-controls select {
   width: 100%;
   padding: 0.8rem;
   margin-top: 0.5rem;
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   background: #fff;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.product-controls select:hover {
+  border-color: #966f4a;
+}
+
+.product-controls select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 5px rgba(182, 137, 91, 0.3);
 }
 
 .product-controls .cta {
-  margin-top: 1.5rem;
-  width: 100% !important;
+  margin-top: auto;
+  width: 100%;
   justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.product-controls .cta:hover {
+  background-color: #966f4a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Modal Animation */
