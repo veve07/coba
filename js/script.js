@@ -62,180 +62,133 @@ window.onclick = (e) => {
 // Data Produk
 const products = [
   {
-    id: 1,
-    name: 'Tekun varian Madu',
+    id: 'labu-jipang-muria',
+    name: 'Labu Jipang Muria',
+    img: 'img/labu-jipang-Muria.png',
+    basePrice: 70000,
+    description: 'packing plastik isi 6pcs<br>1 karton isi 36pcs<br>Cemilan sehat khas Muria yang terbuat dari sayur labu siem muria dan gula jagung.',
+    variants: [
+      { id: 4, name: 'Original 40pcs', price: 70000 },
+      { id: 5, name: 'Kayu Manis 40pcs', price: 70000 },
+      { id: 6, name: 'Melon 40pcs', price: 70000 },
+      { id: 7, name: 'Leci 40pcs', price: 70000 },
+      { id: 8, name: 'Originial 6pcs', price: 20000 },
+      { id: 9, name: 'Kayu Manis 6pcs', price: 20000 },
+      { id: 10, name: 'Melon 6pcs', price: 20000 },
+      { id: 11, name: 'Leci 6pcs', price: 20000 }
+    ]
+  },
+  {
+    id: 'labu-jipang-betawi-karton',
+    name: 'Labu Jipang Betawi',
+    img: 'img/labu-jipang-original.jpeg',
+    basePrice: 70000,
+    description: '1 karton isi 36 pcs<br>Cemilan sehat yang terbuat dari sayur labu siem betawi dan gula pasir.',
+    variants: [
+      { id: 12, name: 'Original', price: 58000 },
+      { id: 12, name: 'Kayu Manis', price: 58000 },
+      { id: 14, name: 'Melon', price: 58000 },
+      { id: 15, name: 'Leci', price: 58000 },
+      { id: 16, name: 'Originial 6pcs', price: 15000 },
+      { id: 17, name: 'Kayu Manis 6pcs', price: 15000 },
+      { id: 18, name: 'Melon 6pcs', price: 15000 },
+      { id: 19, name: 'Leci 6pcs', price: 15000 }
+    ]
+  },
+  {
+    id: 'tekun',
+    name: 'Tekun (Teh Kulit Nanas)',
     img: 'img/tekun.png',
-    price: 45000,
-    description: 'Varian 1 karton madu isi 40pcs.<br>Tekun adalah Teh yang terbuat dari kulit nanas.<br>Komposisi yang digunakan:<br>-kulit nanas<br>-gula pasir<br>-air<br>-extra madu',
+    basePrice: 45000,
+    description: '1 karton isi 40pcs 120ml<br>Teh dari kulit nanas pilihan yang menyegarkan.<br>Komposisi yang digunakan: <br>-Kulit nanas<br>-Gula pasir',
+    variants: [
+      { id: 1, name: 'Kayu Manis', price: 30000 },
+      { id: 2, name: 'Original', price: 30000 },
+      { id: 3, name: 'Sereh', price: 30000 }
+    ]
   },
   {
-    id: 2,
-    name: 'Tekun varian Original',
+    id: 'tekun-celup',
+    name: 'Tekun Celup',
     img: 'img/tekun.png',
-    price: 45000,
-    description: 'Varian 1 karton Original isi 40pcs.<br>Tekun adalah Teh yang terbuat dari kulit nanas.<br>Komposisi yang digunakan:<br>-kulit nanas<br>-gula pasir<br>-air',
+    basePrice: 45000,
+    description: 'per pcs 12gram isi 12pcs<br>Komposisi yang digunakan: <br>-Kulit nanas kering',
+    variants: [
+      { id: 20, name: 'Madu', price: 45000 },
+      { id: 21, name: 'Original', price: 45000 },
+      { id: 22, name: 'Sereh', price: 45000 }
+    ]
   },
   {
-    id: 3,
-    name: 'Tekun varian Sereh',
-    img: 'img/tekun.png',
-    price: 45000,
-    description: 'Varian 1 karton Sereh isi 40pcs.<br>Tekun adalah Teh yang terbuat dari kulit nanas.<br>Komposisi yang digunakan:<br>-kulit nanas<br>-gula pasir<br>-air<br>-extra sereh',
-  },
-  {
-    id: 4,
-    name: 'Tekun Celup varian Kayu Manis',
-    img: 'img/kunir-asem-120.jpeg',
-    price: 30000,
-    description: 'Varian Tekun Celup Kayu Manis isi 12 pcs/per pcs 12 gram.<br>Tekun celup adalah Teh yang terbuat dari kulit nanas.<br>Komposisi yang diguanakan: <br>-kulit nanas kering<br>-extra kayu manis',
-  },
-  {
-    id: 5,
-    name: 'Tekun Celup varian Original',
-    img: 'img/tekun.png',
-    price: 30000,
-    description: 'Tekun Celup varian Original isi 12 pcs per pcs 12 gram.<br>Tekun celup adalah Teh yang terbuat dari kulit nanas.<br>Komposisi yang diguanakan: <br>-kulit nanas kering',
-  },
-  {
-    id: 6,
-    name: 'Tekun celup varian Sereh',
-    img: 'img/labu-jipang-kayumanis.jpeg',
-    price: 30000,
-    description: 'Tekun Celup varian Sereh isi 12 pcs per pcs 12 gram.<br>Tekun celup adalah Teh yang terbuat dari kulit nanas.<br>Komposisi yang diguanakan: <br>-kulit nanas kering<br>-extra sereh',
-  },
-  {
-    id: 7,
+    id: 'jarelang',
     name: 'Jarelang',
     img: 'img/jarelang.png',
-    price: 55000,
-    description: 'Jarelang 1 karton isi 36pcs 120ml.<br>Komposisi yang digunakan:<br>-jahe<br>-jeruk nipis<br>-sere alang alang<br>-gula batu',
-  },
-  {
-    id: 8,
-    name: 'Kunir Asem varian 120ml isi 6pcs',
-    img: 'img/kunir-asem-120.jpeg',
-    price: 15000,
-    description: 'Kunir Asem varian 120ml dengan packing plastik dengan isi 6pcs.<br>Komposisi yang digunakan:<br>-empu kunyit<br>-asam jawa<br>-gula aren<br>-kayu manis',
-  },
-  {
-    id: 9,
-    name: 'Kunir Asem varian 120ml isi 36pcs',
-    img: 'img/kunir-asem-120.jpeg',
-    price: 65000,
-    description: 'Kunir Asem varian gelas 120ml dengan packing karton dengan isi 36pcs.<br>Komposisi yang digunakan:<br>-empu kunyit<br>-asam jawa<br>-gula aren<br>-kayu manis',
-  },
-  {
-    id: 10,
-    name: 'Kunir Asem varian 240ml isi 40pcs',
-    img: 'img/kunir-asem-240.png',
-    price: 127000,
-    description: 'Kunir Asem varian gelas 240ml dengan packing karton dengan isi 40pcs.<br>Komposisi yang digunakan:<br>-empu kunyit<br>-asam jawa<br>-gula aren<br>-kayu manis',
-  },
-  {
-    id: 11,
-    name: 'Kunir Asem varian 350ml',
-    img: 'img/kunir-asem-120.jpeg',
-    price: 4500,
-    description: 'Kunir Asem varian gelas 350ml.<br>Komposisi yang digunakan:<br>-empu kunyit<br>-asam jawa<br>-gula aren<br>-kayu manis',
-  },
-  {
-    id: 12,
-    name: 'Kunir Asem varian 500ml',
-    img: 'img/kunir-asem-500.jpeg',
-    price: 12000,
-    description: 'Kunir Asem varian botol 500ml.<br>Komposisi yang digunakan:<br>-empu kunyit<br>-asam jawa<br>-gula aren<br>-kayu manis',
-  },
-  {
-    id: 13,
-    name: 'Labu Jipang varian Original',
-    img: 'img/labu-jipang-original.jpeg',
-    price: 70000,
-    description: 'Labu Jipang varian Original 120ml dengan packing karton dengan isi 36pcs.<br>Komposisi yang digunakan:<br>-sayur labu siem<br>-gula jagung',
-  },
-  {
-    id: 14,
-    name: 'Labu Jipang varian Kayu Manis',
-    img: 'img/labu-jipang-kayumanis.jpeg',
-    price: 70000,
-    description: 'Labu Jipang varian Kayu Manis 120ml dengan packing karton dengan isi 36pcs.<br>Komposisi yang digunakan:<br>-sayur labu siem<br>-gula jagung<br>-kayu manis',
-  },
-  {
-    id: 15,
-    name: 'Labu Jipang varian Melon',
-    img: 'img/labu-jipang-melon.jpeg',
-    price: 70000,
-    description: 'Labu Jipang varian Melon 120ml dengan packing karton dengan isi 36pcs.<br>Komposisi yang digunakan:<br>-sayur labu siem<br>-gula jagung<br>-sari buah melon',
-  },
-  {
-    id: 16,
-    name: 'Labu Jipang varian Leci',
-    img: 'img/labu-jipang-leci.jpeg',
-    price: 70000,
-    description: 'Labu Jipang varian Leci 120ml dengan packing karton dengan isi 36pcs.<br>Komposisi yang digunakan:<br>-sayur labu siem<br>-gula jagung<br>-perasa leci',
-  },
-  {
-    id: 17,
-    name: 'Sirup Nanas',
-    img: 'img/labu-jipang-original.jpeg',
-    price: 25000,
-    description: 'Sirup Nanas varian 500ml.<br>Komposisi yang digunakan:<br>-nanas<br>-gula pasir<br>-air',
-  },
-  {
-    id: 18,
-    name: 'Kpk Sarjana varian Original',
-    img: 'img/labu-jipang-original.jpeg',
-    price: 12000,
-    description: 'Kpk Sarjana varian Original<br>Komposisi yang digunakan:<br>-pisang kepok<br>-minyak goreng',
-  },
-  {
-    id: 19,
-    name: 'Kpk Sarjana varian Jagung Bakar',
-    img: 'img/labu-jipang-original.jpeg',
-    price: 12000,
-    description: 'Kpk Sarjana varian Jagung Bakar<br>Komposisi yang digunakan:<br>-pisang kepok<br>-minyak goreng',
-  },
-  {
-    id: 20,
-    name: 'Kpk Sarjana varian Barbeque',
-    img: 'img/labu-jipang-original.jpeg',
-    price: 12000,
-    description: 'Kpk Sarjana varian Barbeque<br>Komposisi yang digunakan:<br>-pisang kepok<br>-minyak goreng',
-  },
-  {
-    id: 21,
-    name: 'Kpk Sarjana varian Pedas',
-    img: 'img/labu-jipang-original.jpeg',
-    price: 12000,
-    description: 'Kpk Sarjana varian Pedas<br>Komposisi yang digunakan:<br>-pisang kepok<br>-minyak goreng',
-  },
-  {
-    id: 22,
-    name: 'Kpk Sarjana varian Keju',
-    img: 'img/labu-jipang-original.jpeg',
-    price: 12000,
-    description: 'Kpk Sarjana varian Keju<br>Komposisi yang digunakan:<br>-pisang kepok<br>-minyak goreng',
-  },
+    basePrice: 55000,
+    description: '1 karton isi 36pcs 120ml<br>Teh dari kulit nanas pilihan yang menyegarkan.<br>Komposisi yang digunakan: <br>-Jahe<br>-Jeruk nipis<br>-Sere alang alang<br>-gula batu',
+    variants: [
+      { id: 23, name: 'Original', price: 55000 },
+    ]
+  }
 ];
 
 
 
 // Show Detail Logic
-function showDetail(id) {
-  const product = products.find((p) => p.id === id);
-  if (product) {
-    const modalContent = document.querySelector('.modal-content');
-    modalContent.innerHTML = `
-        <img src="${product.img}" alt="${product.name}">
-        <div class="product-content">
-        
+function showDetail(productId) {
+  const product = products.find(p => p.id === productId);
+  if (!product) return;
+
+  const modalContent = document.querySelector('.modal-content');
+  modalContent.innerHTML = `
+    <img src="${product.img}" alt="${product.name}">
+    <div class="product-info-wrapper">
+      <h3>${product.name}</h3>
+      <div class="content-flex-container">
+        <div class="product-description">
           <p>${product.description}</p>
-          <div class="product-price">${rupiah(product.price)}</div>
-          <a href="#" onclick="addToCart(${product.id}); return false;"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
         </div>
-    `;
-    itemDetailModal.style.display = 'flex';
-    feather.replace();
+        <div class="product-controls">
+          <div class="variant-selection">
+            <label for="v-select">Pilih Rasa/Varian:</label>
+            <select id="v-select">
+              ${product.variants.map(v => `<option value="${v.id}">${v.name} - ${rupiah(v.price)}</option>`).join('')}
+            </select>
+          </div>
+          <a href="#" class="cta" onclick="addToCartFromModal('${product.id}'); return false;">
+            <i data-feather="shopping-cart"></i> <span>Keranjang</span>
+          </a>
+        </div>
+      </div>
+    </div>`;
+
+  itemDetailModal.style.display = 'flex';
+  feather.replace();
+}
+
+//Logika Tambah Ke Keranjang
+function addToCartFromModal(groupId) {
+  const product = products.find(p => p.id === groupId);
+  const selectedVariantId = parseInt(document.getElementById('v-select').value);
+  const variant = product.variants.find(v => v.id === selectedVariantId);
+
+  // Buat objek item untuk cart
+  const cartItem = {
+    id: variant.id,
+    name: `${product.name} (${variant.name})`,
+    price: variant.price,
+    img: product.img,
+    quantity: 1
+  };
+
+  const existingItem = cart.find(item => item.id === cartItem.id);
+  if (existingItem) {
+    existingItem.quantity++;
+  } else {
+    cart.push(cartItem);
   }
+
+  renderCart();
+  itemDetailModal.style.display = 'none'; // Tutup modal
 }
 
 // State Keranjang
@@ -255,36 +208,28 @@ const rupiah = (number) => {
 };
 
 // Render Produk dengan Filter Search
-function renderProducts(keyword = '') {
+function renderProducts(query = '') {
   if (!productListElement) return;
   productListElement.innerHTML = '';
 
-  const filteredProducts = products.filter((item) =>
-    item.name.toLowerCase().includes(keyword.toLowerCase())
-  );
+  const filtered = products.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
 
-  filteredProducts.forEach((item) => {
-    const productCard = document.createElement('div');
-    productCard.classList.add('product-card');
-    productCard.innerHTML = `
-      <div class="product-icons">
-        <a href="#" class="add-to-cart-btn" data-id="${item.id}"><i data-feather="shopping-cart"></i></a>
-        <a href="#" class="item-detail-button" data-id="${item.id}"><i data-feather="eye"></i></a>
-      </div>
-      <div class="product-image">
-        <img src="${item.img}" alt="${item.name}">
-      </div>
-      <div class="product-content">
-        <h3>${item.name}</h3>
-        <div class="product-price">${rupiah(item.price)}</div>
-      </div>
-    `;
-    productListElement.appendChild(productCard);
+  filtered.forEach((product) => {
+    productListElement.innerHTML += `
+      <div class="product-card">
+        <div class="product-icons">
+          <a href="#" onclick="showDetail('${product.id}'); return false;"><i data-feather="eye"></i></a>
+        </div>
+        <div class="product-image">
+          <img src="${product.img}" alt="${product.name}">
+        </div>
+        <div class="product-content">
+          <h3>${product.name}</h3>
+          <div class="product-price">Mulai dari ${rupiah(product.basePrice)}</div>
+        </div>
+      </div>`;
   });
-
-  // Re-attach listeners for new elements
   feather.replace();
-  attachProductListeners();
 }
 
 // Attach Listeners untuk Tombol di Produk (Cart & Detail)
@@ -316,6 +261,7 @@ if (searchBox) {
       productsSection.scrollIntoView({ behavior: 'smooth' });
     }
   });
+  
 }
 
 // Logic Cart
@@ -355,19 +301,17 @@ function changeQuantity(id, change, e = null) {
 
 function renderCart() {
   if (!cartElement) return;
-  // Kosongkan isi cart kecuali elemen selain item (opsional, tapi di sini kita replace isinya)
-  // Kita akan rebuild isinya agar rapi
   cartElement.innerHTML = '';
 
   if (cart.length === 0) {
-    cartElement.innerHTML = '<p style="text-align:center; margin-top:2rem;">Keranjang kosong</p>';
+    cartElement.innerHTML = '<p style="text-align:center; margin-top:2rem; color:#333;">Keranjang kosong</p>';
     return;
   }
 
   let total = 0;
 
   cart.forEach((item) => {
-    total += item.price * item.quantity;
+    total += item.price * item.quantity; // Menggunakan item.price (harga varian)
     const cartItem = document.createElement('div');
     cartItem.classList.add('cart-item');
     cartItem.innerHTML = `
@@ -386,7 +330,6 @@ function renderCart() {
     cartElement.appendChild(cartItem);
   });
 
-  // Render Total & Checkout Button
   const totalDiv = document.createElement('div');
   totalDiv.classList.add('cart-total');
   totalDiv.innerHTML = `Total: <strong>${rupiah(total)}</strong>`;
@@ -400,6 +343,7 @@ function renderCart() {
 
   feather.replace();
 }
+
 
 // Checkout WhatsApp
 function checkout(e) {
@@ -425,8 +369,22 @@ function checkout(e) {
 
 
 // Expose functions to window for onclick (simple implementation)
-window.changeQuantity = changeQuantity;
-window.removeFromCart = removeFromCart;
+window.changeQuantity = function(id, change, e) {
+  if (e) e.stopPropagation();
+  const item = cart.find((i) => i.id === id);
+  if (item) {
+    item.quantity += change;
+    if (item.quantity < 1) {
+      cart = cart.filter(i => i.id !== id);
+    }
+    renderCart();
+  }
+};
+window.removeFromCart = function(id, e) {
+  if (e) e.stopPropagation();
+  cart = cart.filter((item) => item.id !== id);
+  renderCart();
+};
 window.addToCart = addToCart;
 
 // Start
