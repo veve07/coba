@@ -310,6 +310,11 @@ function attachProductListeners() {
 if (searchBox) {
   searchBox.addEventListener('keyup', (e) => {
     renderProducts(e.target.value);
+
+    if (e.target.value.length > 0) {
+      const productsSection = document.querySelector('#products');
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 }
 
