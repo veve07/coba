@@ -649,15 +649,15 @@ footer .credit a {
     font-size: 1.2rem;
   }
 
-  .lokasi .row {
+  .contact .row {
     flex-wrap: wrap;
   }
 
-  .lokasi .row .map {
+  .contact .row .map {
     height: 30rem;
   }
 
-  .lokasi .row form {
+  .contact .row form {
     padding-top: 0;
   }
 
