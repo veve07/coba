@@ -221,7 +221,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/tekun.png');
+  background-image: url('../img/mrjj.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -253,7 +253,7 @@ body {
 
 .hero .content h1 {
   font-size: 5rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Pacifico', cursive;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1  .2;
@@ -525,6 +525,48 @@ footer .credit a {
   width: 80%;
   animation: animateModal 0.5s;
 }
+.modal-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.product-info-wrapper {
+  flex: 1;
+}
+
+.content-flex-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.product-description {
+  flex: 1; /* Bagian kiri: Deskripsi */
+  border-right: 1px solid #eee;
+  padding-right: 1.5rem;
+}
+
+.product-controls {
+  flex: 1; /* Bagian kanan: Pilih Varian & Tombol */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-controls select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--primary);
+  background: #fff;
+}
+
+.product-controls .cta {
+  margin-top: 1.5rem;
+  width: 100% !important;
+  justify-content: center;
+}
 
 /* Modal Animation */
 @keyframes animateModal {
@@ -699,5 +741,12 @@ footer .credit a {
 
   .contact h4 {                  
     font-size: 1.4rem;           
-  }            
+  }
+  .content-flex-container {
+    flex-direction: column;
+  }
+  .product-description {
+    border-right: none;
+    padding-right: 0;
+  }
 }
