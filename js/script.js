@@ -65,13 +65,13 @@ const products = [
     id: 'labu-jipang-muria',
     name: 'Labu Jipang Muria',
     img: 'img/labu-jipang-muria.png',
-    basePrice: 70000,
-    description: 'packing plastik isi 6pcs<br>1 karton isi 36pcs<br>Cemilan sehat khas Muria yang terbuat dari sayur labu siem muria dan gula jagung.',
+    basePrice: 20000,
+    description: 'packing plastik isi 6pcs<br>1 karton isi 36pcs<br>Cemilan sehat khas Muria yang terbuat dari sayur labu siem muria dan gula jagung.<br>Komposisi yang digunakan: <br>-labu jipang<br>-biji selasih<br>-citrid asid<br>-kayu manis<br>-cengkeh<br>-gula jagung<br>-air',
     variants: [
-      { id: 4, name: 'Original 40pcs', price: 70000 },
-      { id: 5, name: 'Kayu Manis 40pcs', price: 70000 },
-      { id: 6, name: 'Melon 40pcs', price: 70000 },
-      { id: 7, name: 'Leci 40pcs', price: 70000 },
+      { id: 4, name: 'Original 36pcs', price: 70000 },
+      { id: 5, name: 'Kayu Manis 36pcs', price: 70000 },
+      { id: 6, name: 'Melon 36pcs', price: 70000 },
+      { id: 7, name: 'Leci 36pcs', price: 70000 },
       { id: 8, name: 'Originial 6pcs', price: 20000 },
       { id: 9, name: 'Kayu Manis 6pcs', price: 20000 },
       { id: 10, name: 'Melon 6pcs', price: 20000 },
@@ -79,16 +79,16 @@ const products = [
     ]
   },
   {
-    id: 'labu-jipang-betawi-karton',
+    id: 'labu-jipang-betawi',
     name: 'Labu Jipang Betawi',
-    img: 'img/labu-jipang-original.jpeg',
-    basePrice: 70000,
-    description: '1 karton isi 36 pcs<br>Cemilan sehat yang terbuat dari sayur labu siem betawi dan gula pasir.',
+    img: 'img/labu-jipang-betawi.png',
+    basePrice: 15000,
+    description: '1 karton isi 36 pcs<br>Cemilan sehat yang terbuat dari sayur labu siem betawi dan gula pasir.<br>Komposisi yang digunakan: <br>-labu jipang<br>-biji selasih<br>-citrid asid<br>-kayu manis<br>-cengkeh<br>-gula pasir<br>-air',
     variants: [
-      { id: 12, name: 'Original', price: 58000 },
-      { id: 12, name: 'Kayu Manis', price: 58000 },
-      { id: 14, name: 'Melon', price: 58000 },
-      { id: 15, name: 'Leci', price: 58000 },
+      { id: 12, name: 'Original 36pcs', price: 58000 },
+      { id: 12, name: 'Kayu Manis 36pcs', price: 58000 },
+      { id: 14, name: 'Melon 36pcs', price: 58000 },
+      { id: 15, name: 'Leci 36pcs', price: 58000 },
       { id: 16, name: 'Originial 6pcs', price: 15000 },
       { id: 17, name: 'Kayu Manis 6pcs', price: 15000 },
       { id: 18, name: 'Melon 6pcs', price: 15000 },
@@ -100,21 +100,21 @@ const products = [
     name: 'Tekun (Teh Kulit Nanas)',
     img: 'img/tekun.png',
     basePrice: 45000,
-    description: '1 karton isi 40pcs 120ml<br>Teh dari kulit nanas pilihan yang menyegarkan.<br>Komposisi yang digunakan: <br>-Kulit nanas<br>-Gula pasir',
+    description: '1 karton isi 40pcs 120ml<br>Teh dari kulit nanas pilihan yang menyegarkan.<br>Komposisi yang digunakan: <br>-Kulit nanas<br>-Gula pasir<br>-Air',
     variants: [
-      { id: 1, name: 'Kayu Manis', price: 30000 },
-      { id: 2, name: 'Original', price: 30000 },
-      { id: 3, name: 'Sereh', price: 30000 }
+      { id: 1, name: 'Kayu Manis', price: 45000 },
+      { id: 2, name: 'Original', price: 45000 },
+      { id: 3, name: 'Sereh', price: 45000 }
     ]
   },
   {
     id: 'tekun-celup',
     name: 'Tekun Celup',
-    img: 'img/tekun.png',
+    img: 'img/tekun-celup.png',
     basePrice: 45000,
-    description: 'per pcs 12gram isi 12pcs<br>Komposisi yang digunakan: <br>-Kulit nanas kering',
+    description: 'per pcs 12gram isi 12pcs<br>Komposisi yang digunakan: <br>-Kulit nanas kering<br>-Kayu manis<br>-sereh',
     variants: [
-      { id: 20, name: 'Madu', price: 45000 },
+      { id: 20, name: 'Kayu Manis', price: 45000 },
       { id: 21, name: 'Original', price: 45000 },
       { id: 22, name: 'Sereh', price: 45000 }
     ]
@@ -128,7 +128,49 @@ const products = [
     variants: [
       { id: 23, name: 'Original', price: 55000 },
     ]
-  }
+  },
+  {
+    id: 'kunir-asem',
+    name: 'Kunir Asem',
+    img: 'img/kunir-asem.png',
+    basePrice: 4500,
+    description: 'Komposisi yang digunakan: <br>-empu kunyit<br>-asam jawa<br>-gula aren<br>-kayu manis<br>',
+    variants: [
+      { id: 24, name: '120ml 6pcs', price: 15000 },
+      { id: 25, name: '120ml 36pcs', price: 65000 },
+      { id: 26, name: '240ml 40pcs', price: 127000 },
+      { id: 27, name: '350ml', price: 4500 },
+      { id: 28, name: '500ml', price: 12000 },
+    ]
+  },
+  {
+    id: 'pisang-sarjana',
+    name: 'Pisang Sarjana',
+    img: 'img/pisang-sarjana.png',
+    basePrice: 12000,
+    description: 'Komposisi yang digunakan: <br>-Pisang kepok<br>-Minyak goreng<br>-Bawang Putih<br>-Ketumbar<br>-Bubuk cabai rasa',
+    variants: [
+      { id: 29, name: 'Spesial Ketumbar', price: 12000 },
+      { id: 30, name: 'Keju Manis', price: 12000 },
+      { id: 31, name: 'Balado', price: 12000 },
+      { id: 33, name: 'Pedas', price: 12000 }
+    ]
+  },
+  {
+    id: 'kpk-sarjana',
+    name: 'Kpk Sarjana',
+    img: 'img/kpk-sarjana.png',
+    basePrice: 12000,
+    description: 'Komposisi yang digunakan: <br>-Pisang kepok<br>-Minyak goreng',
+    variants: [
+      { id: 34, name: 'Jagung', price: 12000 },
+      { id: 35, name: 'Original', price: 12000 },
+      { id: 36, name: 'Jagung', price: 12000 },
+      { id: 37, name: 'Barbeque', price: 12000 },
+      { id: 38, name: 'Pedas', price: 12000 },
+      { id: 39, name: 'Keju', price: 12000 }
+    ]
+  },
 ];
 
 
