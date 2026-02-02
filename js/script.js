@@ -392,7 +392,7 @@ function checkout(e) {
   e.preventDefault();
   if (cart.length === 0) return;
 
-  const phone = '6281326911105'; // Nomor WA Admin
+  const phone = '6285326827010'; // Nomor WA Admin
   let message = 'Halo, saya ingin memesan:\n';
   let total = 0;
 
