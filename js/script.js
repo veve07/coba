@@ -72,7 +72,7 @@ const products = [
       { id: 9, name: 'Kayu Manis 6pcs', price: 20000 },
       { id: 10, name: 'Melon 6pcs', price: 20000 },
       { id: 11, name: 'Leci 6pcs', price: 20000 },
-      { id: 40, name: 'Campur 6pcs', price: 20000 }
+      { id: 39, name: 'Campur 6pcs', price: 20000 }
     ]
   },
   {
@@ -99,7 +99,7 @@ const products = [
       { id: 17, name: 'Kayu Manis 6pcs', price: 15000 },
       { id: 18, name: 'Melon 6pcs', price: 15000 },
       { id: 19, name: 'Leci 6pcs', price: 15000 },
-      { id: 41, name: 'Campur 6pcs', price: 15000 }
+      { id: 40, name: 'Campur 6pcs', price: 15000 }
     ]
   },
   {
@@ -183,12 +183,11 @@ const products = [
     basePrice: 12000,
     description: 'Komposisi yang digunakan: <br>-Pisang kepok<br>-Minyak goreng',
     variants: [
-      { id: 34, name: 'Jagung', price: 12000 },
-      { id: 35, name: 'Original', price: 12000 },
-      { id: 36, name: 'Jagung', price: 12000 },
-      { id: 37, name: 'Barbeque', price: 12000 },
-      { id: 38, name: 'Pedas', price: 12000 },
-      { id: 39, name: 'Keju', price: 12000 }
+      { id: 34, name: 'Original', price: 12000 },
+      { id: 35, name: 'Jagung Bakar', price: 12000 },
+      { id: 36, name: 'Barbeque', price: 12000 },
+      { id: 37, name: 'Pedas', price: 12000 },
+      { id: 38, name: 'Keju', price: 12000 }
     ]
   },
   {
@@ -198,7 +197,7 @@ const products = [
     basePrice: 0,
     description: '1 karton isi 36pcs kemasan 120ml<br>Komposisi yang digunakan: <br>-Nanas<br>-Gula pasir<br>-Cengkeh<br>-Kayu manis<br>-Air',
     variants: [
-      { id: 42, name: 'Original', price: 0 }
+      { id: 41, name: 'Original', price: 0 }
     ]
   },
 ];
